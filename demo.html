@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="jquery-3.1.1.js"></script>
+    <style type="text/css">
+        .wrapper {
+            position: relative;
+            width: 800px;
+            height: 300px;
+            margin:  0 auto;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .wrapper .item {
+            position: absolute;
+            top: 50%;
+            margin-top: -90px;
+            width: 250px;
+            height: 180px;
+            float: left;
+            opacity: 0.4;
+            display:none;
+        }
+        .wrapper .item img {
+            width: 100%;
+            height: 100%;
+        }
+        .item:nth-child(1) {
+            display:block;
+            animation: move 10s linear both infinite;
+        }
+
+        .item:nth-child(2) {
+            display:block;
+            animation: move 10s linear 2.5s both infinite;
+        }
+
+        .item:nth-child(3) {
+            display:block;
+            animation: move 10s linear 5s both infinite;
+        }
+
+        .item:nth-child(4) {
+            display:block;
+            animation: move 10s linear 7.5s both infinite;
+        }
+
+        .item:nth-child(5) {
+            display:block;
+            animation: move 10s linear 10s both infinite;
+        }
+
+        .item:nth-child(6) {
+            display:block;
+            animation: move 10s linear 12.5s both infinite;
+        }
+
+        .item:nth-child(7) {
+            display:block;
+            animation: move 10s linear 15s both infinite;
+        }
+
+        .item:nth-child(8) {
+            display:block;
+            animation: move 10s linear 17.5s both infinite;
+        }
+
+
+
+
+        @keyframes move {
+            0% {
+                left:800px;
+                width:250px;
+                height:0px;
+                top:50%;
+                margin-top:0;
+                opacity:0
+            }
+            14%{
+                left:550px;
+                width:250px;
+                height:180px;
+                top:50%;
+                margin-top:-90px;
+                opacity:0.4
+            }
+            28%{
+                left:550px;
+                width:250px;
+                height:180px;
+                top:50%;
+                margin-top:-90px;
+                opacity:0.4
+            }
+            42%{
+                left:200px;
+                width:400px;
+                height:300px;
+                top:0px;
+                margin-top:0px;
+                opacity:1;
+                z-index:100
+            }
+            56%{
+                left:200px;
+                width:400px;
+                height:300px;
+                top:0px;
+                margin-top:0px;
+                opacity:1;
+                z-index:100
+            }
+            70%{
+                left:0px;
+                width:250px;
+                height:180px;
+                top:50%;
+                margin-top:-90px;
+                opacity:0.4
+            }
+            84%{
+                left:0px;
+                width:250px;
+                height:180px;
+                top:50%;
+                margin-top:-90px;
+                opacity:0.4
+            }
+            100%{
+                left:-250px;
+                width:250px;;
+                height:0;
+                top:50%;
+                margin-top:0px;
+                opacity:0
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class='wrapper'>
+        <div class="item"><img src="1.jpg" alt="" /></div>
+        <div class="item"><img src="2.jpg" alt="" /></div>
+        <div class="item"><img src="3.jpg" alt="" /></div>
+        <div class="item"><img src="4.jpg" alt="" /></div>
+        <div class="item"><img src="5.jpg" alt="" /></div>
+        <div class="item"><img src="6.jpg" alt="" /></div>
+        <div class="item"><img src="7.jpg" alt="" /></div>
+        <div class="item"><img src="8.jpg" alt="" /></div>
+    </div>
+
+    <script type="text/javascript">
+
+        // function a() {
+        //     clearInterval(timer)
+        //     $('.item').eq(0).css('animation-play-state', 'paused');
+        //     setTimeout(function() {
+        //         $('.item').eq(0).css('animation-play-state', 'running');
+        //         timer = setInterval(function () {
+        //             a();
+        //         }, 2000)
+        //     }, 1000)
+        // }
+        // var timer = setInterval(function () {
+        //     a();
+        // }, 2000)
+
+        // setTimeout(function() {
+        //     $('.item').eq(0).css('animation-play-state', 'paused');
+        //     setTimeout(function() {
+        //         $('.item').eq(0).css('animation-play-state', 'running');
+        //     },1000)
+        // }, 2500)
+
+        // setTimeout(function() {
+        //     $('.item').eq(0).css('animation-play-state', 'paused');
+        //     setTimeout(function() {
+        //         $('.item').eq(0).css('animation-play-state', 'running');
+        //     },1000)
+        // }, 6000)
+
+        // setTimeout(function() {
+        //     $('.item').eq(0).css('animation-play-state', 'paused');
+        //     setTimeout(function() {
+        //         $('.item').eq(0).css('animation-play-state', 'running');
+        //     },1000)
+        // }, 9500)
+
+
+
+    </script>
+
+</body>
+</html>
